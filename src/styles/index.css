@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --font-body: "Josefin Sans";
+  --font-paragraph: "Alata";
+}
+
+@utility container {
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+
+.intro {
+  background: url("/images/mobile/image-hero.jpg") no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    background: url("/images/desktop/image-hero.jpg") no-repeat;
+    background-size: cover;
+  }
+}
